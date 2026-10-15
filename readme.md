@@ -7,13 +7,17 @@ This is KIBU's fork of QMK Firmware. **For P75 JIS, use the 0812 PRE-FIX01 sourc
 | Complete P75 JIS source package with fixed dependencies | [Download source ZIP](https://github.com/kibu-keyboards/qmk_firmware-kibu/releases/download/p75-jis-0812-r1-20261015/KIBU-P75-JIS-0812-r1-20261015-source.zip) · [Browse tagged source](https://github.com/kibu-keyboards/qmk_firmware-kibu/tree/p75-jis-0812-r1-20261015/qmk_firmware) |
 | Matching VIA device definition | [Download VIA JSON](https://github.com/kibu-keyboards/qmk_firmware-kibu/releases/download/p75-jis-0812-r1-20261015/kibu_p75_jis_via_pre_fix01.json) |
 | Configuration instructions | [VIA setup guide — USB connection and manual JSON loading](https://github.com/kibu-keyboards/qmk_firmware-kibu/blob/p75-jis-0812-r1-20261015/docs/VIA_GUIDE.md) |
-| Build instructions and version | [Build the fixed source](https://github.com/kibu-keyboards/qmk_firmware-kibu/blob/p75-jis-0812-r1-20261015/docs/BUILD.md) · [Version and device identifiers](https://github.com/kibu-keyboards/qmk_firmware-kibu/blob/p75-jis-0812-r1-20261015/docs/VERSION_AND_TESTS.md) |
+| Build instructions and version | [Build the fixed source](https://github.com/kibu-keyboards/qmk_firmware-kibu/blob/453be76d41336997d0566f4dac47ac4ba8a2ca98/docs/BUILD.md) · [Version and device identifiers](https://github.com/kibu-keyboards/qmk_firmware-kibu/blob/p75-jis-0812-r1-20261015/docs/VERSION_AND_TESTS.md) |
 | Release files and checksums | [P75 JIS release](https://github.com/kibu-keyboards/qmk_firmware-kibu/releases/tag/p75-jis-0812-r1-20261015) · [SHA256SUMS.txt](https://github.com/kibu-keyboards/qmk_firmware-kibu/releases/download/p75-jis-0812-r1-20261015/SHA256SUMS.txt) |
-| License information and known issues | [Source and licenses](https://github.com/kibu-keyboards/qmk_firmware-kibu/blob/p75-jis-0812-r1-20261015/docs/SOURCE_AND_LICENSES.md) · [Known issues](https://github.com/kibu-keyboards/qmk_firmware-kibu/blob/p75-jis-0812-r1-20261015/docs/KNOWN_ISSUES.md) |
+| License information and known issues | [Source and licenses](https://github.com/kibu-keyboards/qmk_firmware-kibu/blob/453be76d41336997d0566f4dac47ac4ba8a2ca98/docs/SOURCE_AND_LICENSES.md) · [Known issues](https://github.com/kibu-keyboards/qmk_firmware-kibu/blob/p75-jis-0812-r1-20261015/docs/KNOWN_ISSUES.md) |
 
 **VIA configuration uses wired USB.** Bluetooth and 2.4 GHz are input connections. No firmware update is required solely to use this source release or setup guide. Load the linked external VIA JSON; do not use the historical JSON embedded in the source tree. Manual loading does not imply inclusion in VIA's official device database.
 
 The source package includes the QMK/FS026 firmware and Bluetooth/2.4 GHz bridge code. Internal firmware for the separate 91680 wireless controller is outside the package. This fork is maintained by KIBU and is not an upstream QMK product-support commitment. Contact [KIBU support](https://kibushop.com/pages/contact) or [m@kibushop.com](mailto:m@kibushop.com).
+
+**Authorization clarification — October 15, 2026:** The [current source and license notice](https://github.com/kibu-keyboards/qmk_firmware-kibu/blob/453be76d41336997d0566f4dac47ac4ba8a2ca98/docs/SOURCE_AND_LICENSES.md) applies the signed manufacturer agreement to the delivered P75 package, including necessary FS026 build files, and supersedes blanket authorization-pending wording in historical documentation. [Installation of modified builds](https://github.com/kibu-keyboards/qmk_firmware-kibu/blob/453be76d41336997d0566f4dac47ac4ba8a2ca98/docs/BUILD.md#installing-a-locally-modified-build-p75-jis) is documented. Firmware, the release tag, and download files are unchanged.
+
+**許諾範囲の訂正（2026年10月15日）：** 締結済み契約に基づく[現行の許諾・ライセンス説明](https://github.com/kibu-keyboards/qmk_firmware-kibu/blob/453be76d41336997d0566f4dac47ac4ba8a2ca98/docs/SOURCE_AND_LICENSES.md)をご参照ください。正式納品済みのQMK側コードと必要なFS026ビルドファイルを対象とし、過去の配布文書にある包括的な許諾待ちの記述を訂正しています。変更版の書き込み手順も追記しました。ファームウェア、リリースタグ、配布ファイルは変更していません。
 
 ## 日本語
 
@@ -22,6 +26,10 @@ P75 JISをご利用の方は、上表の[ソースZIP](https://github.com/kibu-k
 > Modified by KIBU (kibu-keyboards) (M@kibu.jp) on 2026-10-15. Changes: Added P75 JIS customer download and setup navigation above the upstream README. The original README bytes, authorship and license notices are retained below.
 >
 > 変更記録：KIBU（kibu-keyboards、M@kibu.jp）が2026年10月15日にP75 JISのダウンロード・設定案内を追加しました。以下の上流README、原著者およびライセンス表示は保持しています。
+
+> Modified by KIBU (kibu-keyboards) (M@kibu.jp) on 2026-10-15. Changes: Linked the signed-agreement clarification and installation guidance; upstream README bytes and original notices retained.
+>
+> 変更記録：KIBUが2026年10月15日に締結済み契約の適用範囲の訂正と書き込み手順への案内を追加しました。以下の上流READMEと既存の表示は保持しています。
 
 ---
 
