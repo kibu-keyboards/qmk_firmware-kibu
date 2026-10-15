@@ -1,5 +1,5 @@
 {
-  "revision": "Signed-agreement clarification, 2026-10-15",
+  "revision": "Customer firmware installation guide, 2026-10-15",
   "source_baseline": "P75 JIS 0812 PRE-FIX01",
   "firmware_changed": false,
   "reference_bin_sha256": "21DE5AAFA6684B72AD797C47C61712F8D40F5762477DCBA483DC7BB53A4332B2",
@@ -7,7 +7,7 @@
   "file_manifest": "metadata/release-manifest.csv",
   "modified_by": "KIBU (kibu-keyboards) <M@kibu.jp>",
   "modified_on": "2026-10-15",
-  "changes": "Clarified authorization for the formally delivered P75 package, retained third-party licenses and rdr recovery provenance, and documented installation of modified builds. Executable inputs, BIN, VIA definition and historical release assets are unchanged.",
-  "previous_revision": "KIBU modification notices, 2026-09-24",
-  "previous_source_commit": "376f7618b9e785aa09fe2e7b125205322951760a"
+  "changes": "Added English and Japanese customer installation, backup, troubleshooting and baseline-restoration guidance; linked from product documentation. Clarified manual building of modified firmware. Executable inputs, BIN, VIA definition, and historical release assets are unchanged.",
+  "previous_revision": "Signed-agreement clarification, 2026-10-15",
+  "previous_source_commit": "453be76d41336997d0566f4dac47ac4ba8a2ca98"
 }

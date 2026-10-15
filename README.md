@@ -10,12 +10,13 @@ This release provides the QMK/FS026 source, build dependencies, license notices,
 
 This repository is a KIBU-maintained fork of [QMK Firmware](https://github.com/qmk/qmk_firmware). The `master` branch tracks the upstream snapshot taken when this fork was created; the [`p75-jis` branch](https://github.com/kibu-keyboards/qmk_firmware-kibu/tree/p75-jis) and the release tag contain the fixed P75 JIS source package. Use the tagged package to build this firmware. It is not a port to the current upstream QMK.
 
-**Authorization clarification (October 15, 2026):** [Current source and license notice](docs/SOURCE_AND_LICENSES.md) applies the signed manufacturer agreement to the delivered P75 package, including necessary FS026 build files. It supersedes blanket authorization-pending wording in the historical release documentation. Firmware and release downloads are unchanged. [Installation instructions for modified builds](docs/BUILD.md#installing-a-locally-modified-build-p75-jis) are now documented.
+**Authorization clarification (October 15, 2026):** [Current source and license notice](docs/SOURCE_AND_LICENSES.md) applies the signed manufacturer agreement to the delivered P75 package, including necessary FS026 build files. It supersedes blanket authorization-pending wording in the historical release documentation. Firmware and release downloads are unchanged. [Installation instructions for modified builds](docs/INSTALLING_FIRMWARE.md) are now documented.
 
 ## Downloads and setup
 
 - [Release files](https://github.com/kibu-keyboards/qmk_firmware-kibu/releases/tag/p75-jis-0812-r1-20261015): `KIBU-P75-JIS-0812-r1-20261015-source.zip`, the matching `kibu_p75_jis_via_pre_fix01.json`, and `SHA256SUMS.txt`.
 - [VIA setup](docs/VIA_GUIDE.md): connect over USB and load the supplied device definition manually.
+- [Install modified firmware](docs/INSTALLING_FIRMWARE.md): save settings, write your BIN over USB, or return to the published baseline.
 - [Tagged source](https://github.com/kibu-keyboards/qmk_firmware-kibu/tree/p75-jis-0812-r1-20261015) and [exact checkout instructions](docs/GIT_IMPORT.md).
 - [Build workflow](https://github.com/kibu-keyboards/qmk_firmware-kibu/actions/workflows/p75-0812.yml): see the run for the release commit.
 
@@ -46,3 +47,7 @@ Contact [KIBU support](https://kibushop.com/pages/contact) or [m@kibushop.com](m
 > Modified by KIBU (kibu-keyboards) (M@kibu.jp) on 2026-10-15. Changes: Linked the signed-agreement clarification and installation instructions. Firmware, release artifacts and existing notices are unchanged.
 >
 > 変更記録：KIBUが2026年10月15日に締結済み契約に基づく許諾範囲の訂正と、変更版の書き込み手順への案内を追加しました。過去の配布文書にある包括的な許諾待ちの記述は、上記の現行説明に訂正しています。ファームウェア、配布物、既存の表示は変更していません。
+
+> Modified by KIBU (kibu-keyboards) (M@kibu.jp) on 2026-10-15. Changes: Added direct navigation to the customer firmware installation guide. Firmware, release artifacts, and existing notices retained.
+>
+> 変更記録：KIBUが2026年10月15日に[お客様向け変更版ファームウェアの書き込み手順](docs/INSTALLING_FIRMWARE.md)への案内を追加しました。設定の保存、USB経由の書き込み、公開版への復旧を説明しています。通常のVIAキー設定に書き込みは不要です。ファームウェア、配布物と既存の表示は保持しています。

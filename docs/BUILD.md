@@ -53,18 +53,11 @@ The wrappers in `tools/bin` adapt Windows path separators and text line endings 
 
 ## Installing a locally modified build (P75 JIS)
 
-Installation is optional. Use the BIN built for `p75_jis/p75_jis:via` on the matching P75 JIS hardware; it is not firmware for the separate wireless controller or receiver. Keep a copy of the [reference BIN](../artifacts/kibu_p75_jis_pre_fix01_hardware_validated.bin) for restoring the published FS026 baseline.
+Use the [customer installation guide](INSTALLING_FIRMWARE.md) for saving settings, entering the USB bootloader, copying your BIN, checking input, and returning to the published baseline. Installation is optional; ordinary VIA remapping does not require flashing.
 
-1. Save your VIA keymap and macros and record any settings you need. Bootloader entry or a changed firmware/build date can reset settings; preservation is not guaranteed.
-2. Select wired mode and disconnect USB. Hold **Esc** while reconnecting the USB data cable, then release Esc after the keyboard's bootloader storage volume appears.
-3. Copy the generated `p75_jis_p75_jis_via.bin` from the build output to that bootloader volume. Use the newly appeared keyboard volume, not another drive. Do not format it or disconnect power during programming.
-4. Wait for programming to finish and the keyboard to restart. Reconnect normally without holding Esc if needed, then check USB input before loading the matching VIA definition and restoring settings.
+For modified source, use the manual build path above. `tools/ci-build.ps1` checks reproduction of the unmodified reference and intentionally reports a mismatch for a changed BIN. You can select an unused output directory with `P75_BUILD_DIR=.build_custom_01 bash tools/build.sh`; the result is `qmk_firmware/.build_custom_01/p75_jis_p75_jis_via.bin`.
 
-The documented interface is USB mass-storage BIN copying; these steps do not use an account, signing key, or proprietary flashing utility. If the bootloader volume does not appear or the modified firmware does not start, stop and contact [KIBU support](https://kibushop.com/pages/contact). An arbitrary modified build is not covered by the reference firmware's test results. No new hardware flashing test was performed for this documentation revision.
-
-### 日本語：変更したファームウェアの書き込み
-
-書き込みは任意です。対応するP75 JIS用の`p75_jis/p75_jis:via`から生成したBINを使用し、復旧用に公開版の参照BINを保存してください。VIAのキーマップ・マクロを保存し、必要な設定を記録します。ブートローダーへの移行やビルド日付の変更によって設定が初期化される場合があります。有線モードでUSBを外し、Escを押しながらデータケーブルを接続します。キーボードのブートローダー用ドライブが表示されたらEscを離し、生成したBINをそのドライブへコピーしてください。ドライブをフォーマットせず、書き込み中は電源を切らないでください。完了・再起動後にUSB入力を確認し、対応するVIA定義と設定を読み込みます。ドライブが表示されない場合や起動できない場合は、KIBUへお問い合わせください。本改訂で新たな実機書き込み試験は行っていません。
+日本語：設定の保存、USBブートローダーへの移行、BINのコピー、動作確認、公開版への復旧は[お客様向けインストール手順](INSTALLING_FIRMWARE.md)をご参照ください。変更版は上記の手動ビルド手順を使用します。`tools/ci-build.ps1`は未変更版の再現確認用であり、変更したBINは不一致になります。通常のVIAキー設定に書き込みは不要です。
 
 ## Why the build date is fixed
 
@@ -93,3 +86,7 @@ Existing compiler and Python warnings remain visible in the build logs. For Git 
 > Modified by KIBU (kibu-keyboards) (M@kibu.jp) on 2026-10-15. Changes: Documented the existing USB bootloader procedure for locally modified builds and settings-reset limitations; no executable code or hardware test results changed.
 >
 > 変更記録：KIBUが2026年10月15日に既存のUSBブートローダーによる書き込み手順と設定初期化の注意点を追記しました。実行コードと実機試験結果は変更していません。
+
+> Modified by KIBU (kibu-keyboards) (M@kibu.jp) on 2026-10-15. Changes: Moved customer installation steps to a dedicated guide and clarified the manual build path for modified firmware. Executable code and existing notices retained.
+>
+> 変更記録：KIBUが2026年10月15日にお客様向け書き込み手順を独立したガイドへ整理し、変更版の手動ビルド経路を明確にしました。実行コードと既存の表示は保持しています。

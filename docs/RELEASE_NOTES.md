@@ -31,6 +31,10 @@ The Windows build procedure uses GNU Arm Embedded `10.3-2021.10` and a fixed bui
 
 Use the downloadable `SHA256SUMS.txt` to verify the current source archive and release notes.
 
+## Installing modified firmware
+
+[Customer installation guide](INSTALLING_FIRMWARE.md): save settings, enter the USB bootloader, copy your BIN, and return to the published baseline if needed. Ordinary VIA remapping does not require flashing.
+
 ## 日本語
 
 KIBU P75 JISの0812版PRE-FIX01に対応するソースコード、ビルド依存ファイル、ライセンス表示、およびVIAデバイス定義を提供します。`KIBU-P75-JIS-0812-r1-20261015-source.zip` と付属のチェックサムをご利用ください。今回の改訂では、翻訳した文書とソースコード内コメントにKIBUの変更者・日付・変更内容を追記しました。ファームウェアの動作、参照用BIN、VIA定義は変更していません。お客様によるファームウェア更新は不要です。VIAの設定はUSB有線接続で行い、指定のJSONを手動で読み込んでください。USB入力とBluetooth／2.4 GHz用のFS026側通信処理を含みますが、別体の91680無線コントローラー内部ファームウェアは公開範囲外です。ビルド方法、ライセンス、既知の問題は同梱資料をご参照ください。お問い合わせは [KIBUサポート](https://kibushop.com/pages/contact) または [m@kibushop.com](mailto:m@kibushop.com) へお願いいたします。
@@ -38,3 +42,7 @@ KIBU P75 JISの0812版PRE-FIX01に対応するソースコード、ビルド依�
 変更記録：KIBU（kibu-keyboards、M@kibu.jp）が2026年9月24日に本資料の英訳・編集および日本語案内の追加を行いました。原著者の表記、著作権表示、ライセンス表示は保持しています。
 
 公開先の変更：2026年10月15日、KIBUの新しいQMK forkへ配布先を変更しました。対象は0812版の対応ソースコードで、ファームウェア、固定依存ファイル、参照用BIN、VIA定義は変更していません。原著者・著作権・ライセンス表示および既存の変更記録を保持しています。P75 JISには上記のタグ付き配布物をご利用ください。
+
+> Modified by KIBU (kibu-keyboards) (M@kibu.jp) on 2026-10-15. Changes: Added direct navigation to the customer firmware installation guide. Firmware, release artifacts, and existing notices retained.
+>
+> 変更記録：KIBUが2026年10月15日に[お客様向け変更版ファームウェアの書き込み手順](INSTALLING_FIRMWARE.md)への案内を追加しました。設定の保存、USB経由の書き込み、公開版への復旧を説明しています。通常のVIAキー設定に書き込みは不要です。ファームウェア、配布物と既存の表示は保持しています。
