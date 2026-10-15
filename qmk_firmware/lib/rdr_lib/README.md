@@ -1,5 +1,7 @@
 # RDR Common Source Implementation
 
+> Modified by KIBU (kibu-keyboards) (M@kibu.jp) on 2026-10-15. Changes: Applied the confirmed signed agreement to the delivered P75 scope and corrected obsolete authorization-pending statements. Original notices and the recovery history are retained.
+
 `rdr_common.c` is the source implementation of the FS026-side keyboard
 integration that was previously supplied only as `librdrcommon.a`.
 
@@ -70,7 +72,15 @@ places. A stalled wireless controller may therefore block the QMK MCU.
 
 ## Licensing note
 
-The implementation carries `GPL-2.0-or-later` to match the surrounding QMK
-firmware. Before public distribution, the publisher should confirm that it has
-the necessary rights to release any vendor-derived behavior, headers, SDK code,
-and board support files included in the complete repository.
+The implementation carries `GPL-2.0-or-later`. The signed manufacturer
+agreement covers the supplier's own or authorized formally delivered QMK-side
+integration, configuration, interface code, and necessary build files, including
+the delivered FS026 build scripts. Existing third-party licenses and notices
+remain applicable. See [Source Provenance and License Notices](../../../docs/SOURCE_AND_LICENSES.md)
+for the authorization scope and recovery history.
+
+## 日本語
+
+締結済み契約により、供給者が権利を有する部分または許諾権限を有する部分の正式納品済みQMK側コード、設定、インターフェース、および必要なFS026ビルドファイルをGPL-2.0-or-laterで公開します。第三者の元のライセンス・著作権表示と、復元・再実装の来歴は保持しています。
+
+変更記録：KIBU（kibu-keyboards、M@kibu.jp）が2026年10月15日に許諾確認待ちの旧記述を締結済み契約の範囲説明へ更新しました。実装と既存の検証記録は変更していません。
