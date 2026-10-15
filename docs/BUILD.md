@@ -2,6 +2,8 @@
 
 > Modified by KIBU (kibu-keyboards) (M@kibu.jp) on 2026-09-24. Changes: Translated and clarified the English build instructions and reference-output documentation. Original authorship and license notices are retained.
 
+> Modified by KIBU (kibu-keyboards) (M@kibu.jp) on 2026-10-15. Changes: Updated repository links, the release identity, and publication navigation for the new QMK fork. Firmware, fixed dependencies, the reference BIN, the VIA definition, original authorship, licenses, and earlier modification records are retained.
+
 The build target is `p75_jis/p75_jis:via`. QMK, FS026, ChibiOS, ChibiOS-Contrib, and the product bridge implementation are included in this package. Build these fixed files; do not run `git submodule update` to substitute a different dependency revision. The build does not depend on the Web project or a private product object/archive.
 
 ## Pinned inputs
@@ -65,8 +67,10 @@ The fixed-date Windows build reproduces the 80,860-byte reference BIN byte for b
 21DE5AAFA6684B72AD797C47C61712F8D40F5762477DCBA483DC7BB53A4332B2
 ```
 
-[Build records](../metadata/build-results.json) describe the original reproduction. Results for the current release commit are available through the [build workflow](https://github.com/kibu-keyboards/qmk_firmware/actions/workflows/p75-0812.yml).
+[Build records](../metadata/build-results.json) describe the original reproduction. Results for the current release commit are available through the [build workflow](https://github.com/kibu-keyboards/qmk_firmware-kibu/actions/workflows/p75-0812.yml).
 
 The 183 linked objects were compiled from the supplied source, including `lib/rdr_lib/rdr_common.c`; `librdrcommon.a` was not linked. External archives were limited to the toolchain's `libgcc.a`, `libc_nano.a`, `libg_nano.a`, and `libm.a`. See [link inputs](../metadata/link-inputs-original.json), [compilation inputs](../metadata/compiled-inputs-original.json), and [undefined-symbol results](../metadata/undefined-symbols.json). The ELF had no undefined symbols. This evidence covers the FS026 build, not the internal firmware of the separate 91680 controller.
 
 Existing compiler and Python warnings remain visible in the build logs. For Git downloads, follow [exact checkout instructions](GIT_IMPORT.md); release ZIPs already contain the recorded bytes and need no submodule initialization.
+
+公開先の変更：2026年10月15日、KIBUの新しいQMK forkへ配布先を変更しました。対象は0812版の対応ソースコードで、ファームウェア、固定依存ファイル、参照用BIN、VIA定義は変更していません。原著者・著作権・ライセンス表示および既存の変更記録を保持しています。P75 JISには上記のタグ付き配布物をご利用ください。

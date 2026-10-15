@@ -1,0 +1,29 @@
+{
+  "modified_by": "KIBU (kibu-keyboards) <M@kibu.jp>",
+  "modified_on": "2026-10-15",
+  "changes": "Publish the unchanged 0812 firmware source and fixed dependencies in a new QMK fork; update links and release navigation.",
+  "previous_publication_commit": "d7fa6d2543d48fc018393daad5d50722ef537a3c",
+  "source_baseline": "P75 JIS 0812 PRE-FIX01",
+  "repository": "https://github.com/kibu-keyboards/qmk_firmware-kibu",
+  "upstream": "https://github.com/qmk/qmk_firmware",
+  "release_tag": "p75-jis-0812-r1-20261015",
+  "source_archive": "KIBU-P75-JIS-0812-r1-20261015-source.zip",
+  "product_branch": "p75-jis",
+  "product_branch_history": "Supplied source snapshot; no reconstructed production history or claimed ancestry from current upstream.",
+  "firmware_changed": false,
+  "dependencies_changed": false,
+  "via_definition_changed": false,
+  "reference_bin_sha256": "21DE5AAFA6684B72AD797C47C61712F8D40F5762477DCBA483DC7BB53A4332B2",
+  "via_definition_sha256": "2CB4B1F7E9222060C3F55F353128A7278AD6C953ED0B327E95EB1D8089B025BF",
+  "upstream_snapshot_at_creation": "7a1bbf37c5c07da4ea0a162bb139083a46ef40a1",
+  "modified_files": [
+    ".github/workflows/p75-0812.yml",
+    "README.md",
+    "docs/BUILD.md",
+    "docs/GIT_IMPORT.md",
+    "docs/RELEASE_NOTES.md",
+    "docs/VERSION_AND_TESTS.md",
+    "metadata/publication-20261015.json",
+    "metadata/release-manifest.csv"
+  ]
+}

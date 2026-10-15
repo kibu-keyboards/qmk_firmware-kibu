@@ -1,3 +1,5 @@
+# Modified by KIBU (kibu-keyboards) <M@kibu.jp> on 2026-10-15.
+# Change: Build the new fork release tag; preserve build steps and prior notices.
 # Modified by KIBU (kibu-keyboards) <M@kibu.jp> on 2026-09-24.
 # Change: Follow the renamed p75-jis branch for push builds; the release tag is unchanged.
 name: P75 JIS 0812 reproducible build
@@ -5,7 +7,7 @@ name: P75 JIS 0812 reproducible build
 on:
   push:
     branches: [p75-jis]
-    tags: [p75-jis-0812-r1]
+    tags: [p75-jis-0812-r1-20261015]
   workflow_dispatch:
 
 permissions:
